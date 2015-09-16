@@ -12,22 +12,28 @@ div#container	{width: 760px;
 	margin-left: auto;
 	margin-right: auto}
 
-/* ヘッダー Chaper3 p71*/
-header	{
+/* ヘッダー Chaper3 p71}*/
+header#pageheader	{
 	background-color: #017acd;
 	background-image: url(sky.jpg);
-	padding: 28px 20px 98px;
+	padding: 28px 20px 150px;
 }
 
-
-header h1	{
+header#pageheader h1	{
 	margin:  0;
+	float: left;
+	font-size: 40px;
+	font-weight: normal;
+	font-family: 'Righteous', cursive;
 }
 
-header p	{
-	color: #ffffff;
+header#pageheader p	{
+	color: #666666;
 	font-size: 0.75em;
-	margin: 0;
+	margin: 0;font-weight;
+	padding-top: 20px;
+	text-align: right;
+	font-weight: normal;
 }
 
 /* パンくずリスト Chaper3 p84 */
@@ -78,7 +84,8 @@ article p	{
 
 
 /* サイドバー Chapter3 p85*/
-div#sidebar	{width: 166px;
+div#sidebar	{
+	width: 166px;
 	float: left;
 	margin-bottom: 25px;
 }
@@ -92,7 +99,7 @@ div#sidebar nav ul {
 }
 
 div#sidebar nav ul li	{
-	list-style-type: none
+	list-style-type: none;
 }
 
 div#sidebar nav ul li a	{
@@ -156,8 +163,8 @@ small	{
 <div id="container">
 
 	<!-- ヘッダー Chapter Chapter3 p88-->
-	<header>
-		<h1><img src="logo.gif" alt="Green Leaf" /></h1>
+	<header id="pageheader">
+		<h1>Green Leaf</h1>
 		<p>生活を楽しくする情報をもっと身近にお届けします</p>
 	</header>
 
