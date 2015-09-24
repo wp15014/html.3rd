@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">  <!-- 9/14 html5 -->
+<meta charset="utf-8">
 <title>SAMPLE</title>
-<style>
+<meta name="viewport" content="width=device-width">
+<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css">
 
 a	{color: #017acd}
 
@@ -12,49 +16,31 @@ div#container	{width: 760px;
 	margin-left: auto;
 	margin-right: auto}
 
-/* ヘッダー Chaper3 p71}*/
-header#pageheader	{
-	background-color: #017acd;
+/* ヘッダー chap3-10, */
+header	{background-color: #017acd;
 	background-image: url(sky.jpg);
-	padding: 28px 20px 150px;
-}
+	padding: 28px 20px 150px}
 
-header#pageheader h1	{
-	margin:  0;
-	float: left;
-	font-size: 40px;
-	font-weight: normal;
-	font-family: 'Righteous', cursive;
-}
+header h1	{margin: 0}
 
-header#pageheader p	{
-	color: #666666;
+header p	{color: #ffffff;
 	font-size: 0.75em;
-	margin: 0;font-weight;
-	padding-top: 20px;
-	text-align: right;
-	font-weight: normal;
-}
+	margin: 0}
 
-/* パンくずリスト Chaper3 p84 */
-nav#bread	{
-	font-size: 0.75em;
+/* パンくずリスト chap3-9 */
+nav#bread	{font-size: 0.75em;
 	margin-top: 3px;
-	margin-bottom: 30px;
-}
+	margin-bottom: 30px}
 
 
-/* コンテンツ */
-article	{
-	width: 564px;
+/* コンテンツ chap3-10, chap3-12, */
+article	{width: 564px;
 	float: right;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 25px;
-}
+	margin-bottom: 25px}
 
-article h2	{
-	background-color: #014471;
+article h1	{background-color: #014471;
 	background-image: url(bar-blue.png);
 	background-repeat: no-repeat;
 	font-size: 0.875em;
@@ -62,169 +48,145 @@ article h2	{
 	line-height: 28px;
 	padding-left: 6px;
 	margin-top: 0;
-	margin-bottom: 0;
-}
+	margin-bottom: 0}
 
-article h3	{
-	background-color: #e0e0e0;
+article section h1	{background-color: #e0e0e0;
 	background-image: url(bar-green.png);
 	background-repeat: no-repeat;
 	font-size: 0.875em;
 	line-height: 23px;
 	padding-left: 30px;
 	margin-top: 30px;
-	margin-bottom: 0;
-}
+	margin-bottom: 0}
 
-article p	{
-	font-size: 0.75em;
+article p	{font-size: 0.75em;
 	line-height: 1.6;
-	margin-top: 10px;
-}
+	margin-top: 10px}
 
 
-/* サイドバー Chapter3 p85*/
-div#sidebar	{
-	width: 166px;
+/* サイドバー chap3-9,10, */
+div#sidebar	{width: 166px;
 	float: left;
-	margin-bottom: 25px;
-}
+	margin-bottom: 25px}
 
-div#sidebar nav ul {
-	font-size: 0.75em;
+div#sidebar nav ul	{font-size: 0.75em;
 	margin-top: 0;
 	margin-left: 0;
 	padding-left: 0;
-	line-height: 0;
-}
+	line-height: 0}
 
-div#sidebar nav ul li	{
-	list-style-type: none;
-}
+div#sidebar nav ul li	{list-style-type: none}
 
-div#sidebar nav ul li a	{
-	display: block;
+div#sidebar nav ul li a	{display: block;
 	line-height: 30px;
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #005087;
 	border-bottom: solid 1px #ffffff;
-	padding-left: 10px;
-}
+	padding-left: 10px}
 
-div#sidebar nav ul li a:hover	{
-	background-color: #017acd;
-}
+div#sidebar nav ul li a:hover	{background-color: #017acd}
 
-div#sidebar aside	{
-	margin-bottom: 10px;
-}
+/* chap3-10asideに変更, */
+div#sidebar aside	{margin-bottom: 10px}
 
-div#sidebar aside a	{
-	font-size: 0.75em;
+div#sidebar aside a	{font-size: 0.75em;
 	color: #444444;
 	text-decoration: none;
 	line-height: 30px;
 	border: solid 1px #888888;
-	padding: 5px;
-}
+	padding: 5px}
 
-div#sidebar aside img	{
-	border: none;
-	vertical-align: middle;
-}
+div#sidebar aside img	{border: none;
+	vertical-align: middle}
 
 
-/* フッター */
-footer	{
-	background-image: url(line-blue.png);
+/* フッター chap3-10, */
+footer	{background-image: url(line-blue.png);
 	background-repeat: repeat-x;
 	width: 760px;
 	margin-top: 0;
 	padding-top: 8px;
-	clear: both;
-}
+	clear: both}
 
-small	{
-	font-size: 0.75em;
+/* 定義変更address → small */
+small	{font-size: 0.75em;
 	font-style: normal;
-	text-align: center;
-	display: block
-}
+	text-align: center}
 
 </style>
-<!-- [if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.jp"></script>
-<![endif]-->
 </head>
 <body>
 
 <!-- コンテナ -->
 <div id="container">
 
-	<!-- ヘッダー Chapter Chapter3 p88-->
-	<header id="pageheader">
-		<h1>Green Leaf</h1>
-		<p>生活を楽しくする情報をもっと身近にお届けします</p>
-	</header>
+<!-- ヘッダー chap3-10, -->
+<header>
+	<h1><img src="logo.gif" alt="Green Leaf" /></h1>
+	<p>生活を楽しくする情報をもっと身近にお届けします</p>
+</header>
 
-	<!-- パンくずリスト Chaper3 p82-->
-	<nav id="bread">
+<!-- パンくずリスト chap3-9-->
+<nav id="bread">
 	<a href="link.html">トップページ</a> &gt;
 	<a href="link.html">サービス案内</a>
-	</nav>
+</nav>
 
 
-	<!-- コンテンツ Chapter3 p76,103-->
-	<article itemscope itemtype="http://schema.org/Article">
-	<h1>サービス案内</h1>
+<!-- コンテンツ chap3-10, -->
+<article>
 
-	<p>Green Leafは生活を楽しくするサービスを、もっと身近にお届けするために活動している企業グループです。情報サイトやショッピングサイトを通じてさまざまなサービスの提供を行い、みなさまをサポートいたします。</p>
+<h1>サービス案内</h1>
 
-	<section>
-		<h1>情報サイト「Green Leaf」</h1>
+<p>Green Leafは生活を楽しくするサービスを、もっと身近にお届けするために活動している企業グループです。情報サイトやショッピングサイトを通じてさまざまなサービスの提供を行い、みなさまをサポートいたします。</p>
 
-		<p>情報サイト「Green Leaf」では、「生活を楽しくするサービスをもっと身近に」をテーマに、日常生活で役に立つサービスの情報をお届けします。生活を楽しくするためには、「衣」「食」「住」を満たすことが大切です。そのために必要な情報を充実させました。最新のファッション事情から洋服のリサイクル情報、安全でおいしい食材にレシピ、それを味わえるレストラン、住まいを快適にアレンジするテクニック、職人に支えられた伝統の技などなど… 楽しみながら活用していただければと思います。</p>
-	</section>
+<section>
+	<h1>情報サイト「Green Leaf」</h1>
+	
+	<p>情報サイト「Green Leaf」では、「生活を楽しくするサービスをもっと身近に」をテーマに、日常生活で役に立つサービスの情報をお届けします。生活を楽しくするためには、「衣」「食」「住」を満たすことが大切です。そのために必要な情報を充実させました。最新のファッション事情から洋服のリサイクル情報、安全でおいしい食材にレシピ、それを味わえるレストラン、住まいを快適にアレンジするテクニック、職人に支えられた伝統の技などなど… 楽しみながら活用していただければと思います。</p>
+</section>
 
-	<p>また、「遊」を充実させる情報として、関東、関西圏を中心としたレジャーや癒しのスポットを紹介します。名所・旧跡に温泉、日帰り旅行からちょっとした贅沢な旅まで取り揃えていく予定です。</p>
+<p>また、「遊」を充実させる情報として、関東、関西圏を中心としたレジャーや癒しのスポットを紹介します。名所・旧跡に温泉、日帰り旅行からちょっとした贅沢な旅まで取り揃えていく予定です。</p>
 
 
-	<section>
-		<h1>ショッピングサイト「Green Shop」</h1>
+<h1>ショッピングサイト「Green Shop」</h1>
 
-		<p>ショッピングサイト「Green Shop」では、情報サイト「Green Leaf」で紹介した "いいもの" や "おもしろいもの" を購入していただけるようにしています。</p>
-	</section>
+<p>ショッピングサイト「Green Shop」では、情報サイト「Green Leaf」で紹介した "いいもの" や "おもしろいもの" を購入していただけるようにしています。</p>
 
-	<p>そのほかにも、ショップ内のToy Boxコーナーではヨーロッパやアフリカの遊び心にあふれる玩具を、Candy Boxコーナーではカラフルでおいしいお菓子をたくさん扱っています。また、地域ごとの地場産野菜の宅配も承っておりますので、ぜひご利用ください。</p>
+<p>そのほかにも、ショップ内のToy Boxコーナーではヨーロッパやアフリカの遊び心にあふれる玩具を、Candy Boxコーナーではカラフルでおいしいお菓子をたくさん扱っています。また、地域ごとの地場産野菜の宅配も承っておりますので、ぜひご利用ください。</p>
 
-	</article>
+</article>
 
-	<!-- サイドバー Chaper3 p84-->
-	<div id="sidebar">
-	<nav>
-		<ul>
-		<li><a href="link.html">トップページ</a></li>
-		<li><a href="link.html">会社情報</a></li>
-		<li><a href="link.html">サービス案内</a></li>
-		<li><a href="link.html">お問い合わせ</a></li>
-		<li><a href="link.html">ブログ</a></li>
-		</ul>
-	</nav>
-	<aside> <!-- asideに置き換え -->
+
+
+<!-- サイドバー chap3-9,-->
+<div id="sidebar">
+
+<nav>
+	<ul>
+	<li><a href="link.html">トップページ</a></li>
+	<li><a href="link.html">会社情報</a></li>
+	<li><a href="link.html">サービス案内</a></li>
+	<li><a href="link.html">お問い合わせ</a></li>
+	<li><a href="link.html">ブログ</a></li>
+	</ul>
+</nav>
+
+<aside>
 	<a href="feed.xml">
 	<img src="feed-icon-14x14.png" alt="RSS" />
 	RSSフィード
 	</a>
-	</aside>
+</aside>
 
-	</div>
+</div>
 
-
-	<!-- フッター Chaper3 p88-->
-	<footer>
-		<small>Copyright (C) Green Leaf, All rights reserved.</small>
-	</footer>
+<!-- 定義変更address→small -->
+<!-- フッター -->
+<div id="footer">
+<small>Copyright (C) Green Leaf, All rights reserved.</small>
+</div>
 
 </div>
 
